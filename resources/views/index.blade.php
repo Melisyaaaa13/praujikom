@@ -107,13 +107,11 @@
         <div class="row align-items-stretch section-overlap">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="banner-wrap bg-primary h-100">
-              <a href="#" class="h-100">
-                <h5>Free <br> Shipping</h5>
-                <p>
-                  Amet sit amet dolor
-                  <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
-                </p>
-              </a>
+              <a href="kapsul" class="h-100">
+                <img  src="{{asset('assets/pharma/images/generic.png')}}" alt="image" width="70">
+              <br>
+                <align-items-center> <h5>Generic</h5>
+            </a>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
@@ -154,30 +152,30 @@
         <div class="row">
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
             <span class="tag">Sale</span>
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/product_01.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Bioderma</a></h3>
-            <p class="price"><del>95.00</del> &mdash; $55.00</p>
+            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/Cleanclear.jpeg')}}" alt="Image" width="300"></a>
+            <h3 class="text-dark"><a href="shop-single.html">Clear n Clear</a></h3>
+            <p class="price"> Rp.7.900 &mdash; Rp.27.000</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/product_02.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Chanca Piedra</a></h3>
-            <p class="price">$70.00</p>
+            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/dettol.jpeg')}}" alt="Image" width="320"></a>
+            <h3 class="text-dark"><a href="shop-single.html">Dettol</a></h3>
+            <p class="price">Rp38,200</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/product_03.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-            <p class="price">$120.00</p>
+            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/betadin.jpeg')}}" alt="Image" width="320"></a>
+            <h3 class="text-dark"><a href="shop-single.html">Betadine</a></h3>
+            <p class="price">Rp11,800</p>
           </div>
 
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
 
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/product_04.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Cetyl Pure</a></h3>
-            <p class="price"><del>45.00</del> &mdash; $20.00</p>
+            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/instoo.jpeg')}}" alt="Image" width="300"></a>
+            <h3 class="text-dark"><a href="shop-single.html">Insto</a></h3>
+            <p class="price">Rp13,714</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/product_05.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">CLA Core</a></h3>
+            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/obh100.jpg')}}" alt="Image" width="300"></a>
+            <h3 class="text-dark"><a href="shop-single.html">Obh ika generik </a></h3>
             <p class="price">$38.00</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">

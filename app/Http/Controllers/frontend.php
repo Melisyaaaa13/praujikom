@@ -44,6 +44,10 @@ class frontend extends Controller
     {
         return view('suplement');
     }
+     public function kapsul()
+    {
+        return view('kapsul');
+    }
     /**
      * Show the form for creating a new resource.
      *
