@@ -26,5 +26,9 @@ Route::get('shop', 'frontend@shop');
 Route::get('contact', 'frontend@contact');
 Route::get('suplement', 'frontend@suplement');
 Route::get('kapsul', 'frontend@kapsul');
+Route::get('menjagamata', 'frontend@menjagamata');
 
 
+Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function(){
+    Route::resource('/backend','backendController');
+});

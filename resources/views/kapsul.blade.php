@@ -126,13 +126,12 @@
                     </td>
                     <td class="product-thumbnail">
                       <img src="{{asset('assets/pharma/images/morfina.jpg')}}" data-toggle="modal" data-target="#modaldua" alt="Image" class="img-fluid">
-
                   </tr>
-
                   <tr>
                     <td class="product-thumbnail">
                       <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
-
+                    </td>
+                    </tr>
 <!-- Modal -->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">

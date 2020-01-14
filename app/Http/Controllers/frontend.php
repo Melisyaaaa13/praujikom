@@ -48,6 +48,10 @@ class frontend extends Controller
     {
         return view('kapsul');
     }
+    public function menjagamata()
+    {
+        return view('menjagamata');
+    }
     /**
      * Show the form for creating a new resource.
      *

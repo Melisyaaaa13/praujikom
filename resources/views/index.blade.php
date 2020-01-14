@@ -152,47 +152,47 @@
         <div class="row">
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
             <span class="tag">Sale</span>
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/Cleanclear.jpeg')}}" alt="Image" width="300"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Clear n Clear</a></h3>
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/Cleanclear.jpeg')}}" alt="Image" width="300"></a>
+            <h3 class="text-dark"><a href="shop-single">Clear n Clear</a></h3>
             <p class="price"> Rp.7.900 &mdash; Rp.27.000</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/dettol.jpeg')}}" alt="Image" width="320"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Dettol</a></h3>
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/dettol.jpeg')}}" alt="Image" width="320"></a>
+            <h3 class="text-dark"><a href="shop-single">Dettol</a></h3>
             <p class="price">Rp38,200</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/betadin.jpeg')}}" alt="Image" width="320"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Betadine</a></h3>
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/betadin.jpeg')}}" alt="Image" width="320"></a>
+            <h3 class="text-dark"><a href="shop-single">Betadine</a></h3>
             <p class="price">Rp11,800</p>
           </div>
 
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
 
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/instoo.jpeg')}}" alt="Image" width="300"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Insto</a></h3>
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/instoo.jpeg')}}" alt="Image" width="300"></a>
+            <h3 class="text-dark"><a href="shop-single">Insto</a></h3>
             <p class="price">Rp13,714</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/obh100.jpg')}}" alt="Image" width="300"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Obh ika generik </a></h3>
-            <p class="price">$38.00</p>
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/obh100.jpg')}}" alt="Image" width="300"></a>
+            <h3 class="text-dark"><a href="shop-single">Obh ika generik </a></h3>
+            <p class="price">Rp 14.762,- / Botol</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
             <span class="tag">Sale</span>
-            <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/product_06.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Poo Pourri</a></h3>
-            <p class="price"><del>$89</del> &mdash; $38.00</p>
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <a href="shop.html" class="btn btn-primary px-4 py-3">View All Products</a>
+            <a href="shop" class="btn btn-primary px-4 py-3">View All Products</a>
           </div>
         </div>
       </div>
     </div>
-
+    
 
     <div class="site-section bg-light">
       <div class="container">
@@ -206,26 +206,26 @@
             <div class="nonloop-block-3 owl-carousel">
 
               <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/product_03.png')}}" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_03.png')}}" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single">Umcka Cold Care</a></h3>
                 <p class="price">$120.00</p>
               </div>
 
               <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/product_01.png')}}" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_01.png')}}" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single">Umcka Cold Care</a></h3>
                 <p class="price">$120.00</p>
               </div>
 
               <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/product_02.png')}}" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_02.png')}}" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single">Umcka Cold Care</a></h3>
                 <p class="price">$120.00</p>
               </div>
 
               <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="{{asset('assets/pharma/images/product_04.png')}}" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_04.png')}}" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single">Umcka Cold Care</a></h3>
                 <p class="price">$120.00</p>
               </div>
 
@@ -234,58 +234,37 @@
         </div>
       </div>
     </div>
-
-    <div class="site-section">
+    
+    
+        <div class="site-section bg-light">
       <div class="container">
         <div class="row">
           <div class="title-section text-center col-12">
-            <h2 class="text-uppercase">Testimonials</h2>
+            <h2 class="text-uppercase"> Info & Tips Kesehatan</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 block-3 products-wrap">
-            <div class="nonloop-block-3 no-direction owl-carousel">
+            <div class="nonloop-block-3 owl-carousel">
 
-              <div class="testimony">
-                <blockquote>
-                  <img src="{{asset('assets/pharma/images/person_1.jpg')}}" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat unde.&rdquo;</p>
-                </blockquote>
-
-                <p>&mdash; Kelly Holmes</p>
+              <div class="text-center item mb-4">
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/haricuci.jpeg')}}" alt="Image" width="300"></a>
+                <h3 class="text-dark"><a href="shop-single">Hari Cuci Tangan Sedunia</a></h3>
               </div>
 
-              <div class="testimony">
-                <blockquote>
-                  <img src="{{asset('assets/pharma/images/person_2.jpg')}}" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                    unde.&rdquo;</p>
-                </blockquote>
-
-                <p>&mdash; Rebecca Morando</p>
+              <div class="text-center item mb-4">
+                <a href="menjagamata"> <img src="{{asset('assets/pharma/images/mata.jpg')}}" alt="Image" width="300"></a>
+                <h3 class="text-dark"><a href="menjagamata">Cara sederhana menjaga mata</a></h3>
               </div>
 
-              <div class="testimony">
-                <blockquote>
-                  <img src="{{asset('assets/pharma/images/person_3.jpg')}}" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                    unde.&rdquo;</p>
-                </blockquote>
-
-                <p>&mdash; Lucas Gallone</p>
+              <div class="text-center item mb-4">
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/donorrr.jpeg')}}" alt="Image" width="300"></a>
+                <h3 class="text-dark"><a href="shop-single">Donor Darah</a></h3>
               </div>
 
-              <div class="testimony">
-                <blockquote>
-                  <img src="{{asset('assets/pharma/images/person_4.jpg')}}" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                    unde.&rdquo;</p>
-                </blockquote>
-
-                <p>&mdash; Andrew Neel</p>
+              <div class="text-center item mb-4">
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/janganpanik.jpeg')}}" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single">Jangan Panik ketika anak sakit</a></h3>
               </div>
 
             </div>
@@ -294,31 +273,9 @@
       </div>
     </div>
 
-    <div class="site-section bg-secondary bg-image" style="background-image: url({{asset('assets/pharma/images/bg_2.jpg')}}')}});">
-      <div class="container">
-        <div class="row align-items-stretch">
-          <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_1.jpg')}}');">
-              <div class="banner-1-inner align-self-center">
-                <h2>Pharma Products</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_2.jpg')}}');">
-              <div class="banner-1-inner ml-auto  align-self-center">
-                <h2>Rated by Experts</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+       
 
+    
 
     <footer class="site-footer">
       <div class="container">
