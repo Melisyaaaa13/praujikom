@@ -15,6 +15,11 @@
 //     return view('welcome');
 // });
 
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -30,5 +35,5 @@ Route::get('menjagamata', 'frontend@menjagamata');
 
 
 Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function(){
-    Route::resource('/backend','backendController');
+    Route::resource('/index','backendController');
 });

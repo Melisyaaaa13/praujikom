@@ -53,11 +53,11 @@
                 <li class="has-children">
                   <a href="#">Dropdown</a>
                   <ul class="dropdown">
-                    <li><a href="#">Supplements</a></li>
+                    <li><a href="suplement">Supplements</a></li>
                     <li class="has-children">
                       <a href="#">Vitamins</a>
                       <ul class="dropdown">
-                        <li><a href="#">Supplements</a></li>
+                        <li><a href="suplement">Supplements</a></li>
                         <li><a href="#">Vitamins</a></li>
                         <li><a href="#">Diet &amp; Nutrition</a></li>
                         <li><a href="#">Tea &amp; Coffee</a></li>
@@ -94,7 +94,7 @@
               <h2 class="sub-title">Effective Medicine, New Medicine Everyday</h2>
               <h1>Welcome To Siap</h1>
               <p>
-                <a href="shop" class="btn btn-primary px-5 py-3">Shop Now</a>
+                <a href="shop" class="btn btn-primary px-5 py-3">Belanja sekarang</a>
               </p>
             </div>
           </div>
@@ -192,7 +192,7 @@
         </div>
       </div>
     </div>
-    
+
 
     <div class="site-section bg-light">
       <div class="container">
@@ -206,27 +206,27 @@
             <div class="nonloop-block-3 owl-carousel">
 
               <div class="text-center item mb-4">
-                <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_03.png')}}" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/vitaminc.jpeg')}}" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single">Vitaciminc</a></h3>
+                <p class="price">Rp.1500</p>
               </div>
 
               <div class="text-center item mb-4">
-                <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_01.png')}}" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/hansaplast.jpg')}}" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single">Hansaplast</a></h3>
+                <p class="price">Rp.27000</p>
               </div>
 
               <div class="text-center item mb-4">
-                <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_02.png')}}" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/sangobion.jpg')}}" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single">Sangobion</a></h3>
+                <p class="price">Rp.13000</p>
               </div>
 
               <div class="text-center item mb-4">
-                <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_04.png')}}" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
+                <a href="shop-single"> <img src="{{asset('assets/pharma/images/tolak.jpeg')}}" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single">Tolak Angin</a></h3>
+                <p class="price">Rp.15000</p>
               </div>
 
             </div>
@@ -234,8 +234,8 @@
         </div>
       </div>
     </div>
-    
-    
+
+
         <div class="site-section bg-light">
       <div class="container">
         <div class="row">
@@ -273,9 +273,9 @@
       </div>
     </div>
 
-       
 
-    
+
+
 
     <footer class="site-footer">
       <div class="container">
@@ -292,7 +292,7 @@
           <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
             <h3 class="footer-heading mb-4">Quick Links</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Supplements</a></li>
+              <li><a href="suplement">Supplements</a></li>
               <li><a href="#">Vitamins</a></li>
               <li><a href="#">Diet &amp; Nutrition</a></li>
               <li><a href="#">Tea &amp; Coffee</a></li>

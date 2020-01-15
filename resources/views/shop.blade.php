@@ -53,11 +53,11 @@
                 <li class="has-children">
                   <a href="#">Dropdown</a>
                   <ul class="dropdown">
-                    <li><a href="#">Supplements</a></li>
+                    <li><a href="suplement">Supplements</a></li>
                     <li class="has-children">
                       <a href="#">Vitamins</a>
                       <ul class="dropdown">
-                        <li><a href="#">Supplements</a></li>
+                        <li><a href="suplement">Supplements</a></li>
                         <li><a href="#">Vitamins</a></li>
                         <li><a href="#">Diet &amp; Nutrition</a></li>
                         <li><a href="#">Tea &amp; Coffee</a></li>
@@ -97,30 +97,104 @@
     <div class="site-section">
       <div class="container">
 
+
+
+    <div class="site-section">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <h3 class="mb-3 h6 text-uppercase text-black d-block">Filter by Price</h3>
-            <div id="slider-range" class="border-primary"></div>
-            <input type="text" name="text" id="amount" class="form-control border-0 pl-0 bg-white" disabled="" />
-          </div>
-          <div class="col-lg-6">
-            <h3 class="mb-3 h6 text-uppercase text-black d-block">Filter by Reference</h3>
-            <button type="button" class="btn btn-secondary btn-md dropdown-toggle px-4" id="dropdownMenuReference"
-              data-toggle="dropdown">Reference</button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-              <a class="dropdown-item" href="#">Relevance</a>
-              <a class="dropdown-item" href="#">Name, A to Z</a>
-              <a class="dropdown-item" href="#">Name, Z to A</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Price, low to high</a>
-              <a class="dropdown-item" href="#">Price, high to low</a>
-            </div>
+          <div class="title-section text-center col-12">
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <span class="tag">Sale</span>
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/Cleanclear.jpeg')}}" alt="Image" width="300"></a>
+            <h3 class="text-dark"><a href="shop-single">Clear n Clear</a></h3>
+            <p class="price"> Rp.7.900 &mdash; Rp.27.000</p>
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/dettol.jpeg')}}" alt="Image" width="320"></a>
+            <h3 class="text-dark"><a href="shop-single">Dettol</a></h3>
+            <p class="price">Rp38,200</p>
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/betadin.jpeg')}}" alt="Image" width="320"></a>
+            <h3 class="text-dark"><a href="shop-single">Betadine</a></h3>
+            <p class="price">Rp11,800</p>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/instoo.jpeg')}}" alt="Image" width="300"></a>
+            <h3 class="text-dark"><a href="shop-single">Insto</a></h3>
+            <p class="price">Rp13,714</p>
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/obh100.jpg')}}" alt="Image" width="300"></a>
+            <h3 class="text-dark"><a href="shop-single">Obh ika generik </a></h3>
+            <p class="price">Rp 14.762,- / Botol</p>
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/tolak.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">Tolak Angin</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/sangobion.jpg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">Sangobion</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/hansaplast.jpg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/vitaminc.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
+            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
+            <p class="price">Rp 22.595,- / Botol </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
             <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_01.png')}}" alt="Image"></a>
             <h3 class="text-dark"><a href="shop-single">Bioderma</a></h3>
             <p class="price"><del>95.00</del> &mdash; $55.00</p>
@@ -148,14 +222,12 @@
             <p class="price">$38.00</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <span class="tag">Sale</span>
             <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_06.png')}}" alt="Image"></a>
             <h3 class="text-dark"><a href="shop-single">Poo Pourri</a></h3>
             <p class="price"><del>$89</del> &mdash; $38.00</p>
           </div>
 
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <span class="tag">Sale</span>
             <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_01.png')}}" alt="Image"></a>
             <h3 class="text-dark"><a href="shop-single">Bioderma</a></h3>
             <p class="price"><del>95.00</del> &mdash; $55.00</p>
@@ -183,7 +255,6 @@
             <p class="price">$38.00</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <span class="tag">Sale</span>
             <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_06.png')}}" alt="Image"></a>
             <h3 class="text-dark"><a href="shop-single">Poo Pourri</a></h3>
             <p class="price"><del>$89</del> &mdash; $38.00</p>
@@ -249,7 +320,7 @@
           <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
             <h3 class="footer-heading mb-4">Quick Links</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Supplements</a></li>
+              <li><a href="suplement">Supplements</a></li>
               <li><a href="#">Vitamins</a></li>
               <li><a href="#">Diet &amp; Nutrition</a></li>
               <li><a href="#">Tea &amp; Coffee</a></li>
