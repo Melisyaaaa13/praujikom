@@ -112,22 +112,75 @@
                 <tbody>
                   <tr>
                     <td class="product-thumbnail">
-                      <img src="{{asset('assets/pharma/images/tramadol.jpg')}}" data-toggle="modal" data-target="#exampleModalLong" alt="Image" class="img-fluid">
+                      <img src="{{asset('assets/pharma/images/iflex.png')}}" data-toggle="modal" data-target="#exampleModalLong" alt="Image" class="img-fluid">
+                        <p>I-Flex</p>
+                    </td>
+                    <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/fitkom.jpg')}}" data-toggle="modal" data-target="#modaldua" alt="Image" class="img-fluid">
+                        <p> FITKOM GUMMY GO COKLAT 5S</p>
+                    </td>
+                    <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/peptisol.jpeg')}}" data-toggle="modal" data-target="#modaltiga" alt="Image" class="img-fluid">
+                        <p> PEPTISOL COKL 185G</p>
 
                     </td>
-                    <td class="product-thumbnail">
-                      <img src="{{asset('assets/pharma/images/pethidin.jpg')}}" data-toggle="modal" data-target="#modaldua" alt="Image" class="img-fluid">
-                    </td>
-                    <td class="product-thumbnail">
-                      <img src="{{asset('assets/pharma/images/paracetamol.jpg')}}" data-toggle="modal" data-target="#modaltiga" alt="Image" class="img-fluid">
+                     <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/hepaq.jpg')}}" data-toggle="modal" data-target="#modalempat" alt="Image" class="img-fluid">
+                    <p>HEPA-Q</p>
                     </td>
                     <td class="product-thumbnail">
                       <img src="{{asset('assets/pharma/images/natrium.jpg')}}" data-toggle="modal" data-target="#modaldua" alt="Image" class="img-fluid">
                     </td>
                     <td class="product-thumbnail">
                       <img src="{{asset('assets/pharma/images/morfina.jpg')}}" data-toggle="modal" data-target="#modaldua" alt="Image" class="img-fluid">
-                  </tr>
+                  </td>
+                    </tr>
                   <tr>
+                    <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td>
+                    <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td><td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td><td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td><td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td>
+                    <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td>
+                    <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td><td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td><td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td><td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td>
+                    <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td>
+                    </tr><tr>
+                    <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td>
+                    <td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td><td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td><td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td><td class="product-thumbnail">
+                      <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
+                    </td>
                     <td class="product-thumbnail">
                       <img src="{{asset('assets/pharma/images/product_01.png')}}"  alt="Image" class="img-fluid">
                     </td>
@@ -143,14 +196,13 @@
         </button>
       </div>
       <div class="modal-body">
-        TRAMADOL KAPSUL 50 MG
-        <img src="{{asset('assets/pharma/images/tramadol.jpg')}}" data-toggle="modal" data-target="#exampleModalLong" alt="Image" class="img-fluid">
-       <p> Tiap kapsul mengandung :
-            Tramadol HCl 50 mg
-            <br>
-            <br>
-            Dus, 5 strip @ 10 kapsul</p>
-      </div>
+         <p>I-FLEX 0,75G CAP</p>
+        <img src="{{asset('assets/pharma/images/iflex.png')}}" data-toggle="modal" data-target="#exampleModalLong" alt="Image" class="img-fluid">
+       <p> Kemasan </p>
+        <p>1 Botol isi 180 Tablet </p>
+        <p>Dosis</p>
+            <p>2 x sehari 3 kapsul</p>
+              </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
     </div>
@@ -162,19 +214,52 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modaltigajudul">Tramadol</h5>
+        <h5 class="modal-title" id="modaltigajudul">Peptisol</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        TRAMADOL KAPSUL 50 MG
-        <img src="{{asset('assets/pharma/images/tramadol.jpg')}}" data-toggle="modal" data-target="#modaltiga" alt="Image" class="img-fluid">
-       <p> Tiap kapsul mengandung :
-            Tramadol HCl 50 mg
-            <br>
-            <br>
-            Dus, 5 strip @ 10 kapsul</p>
+       <p>  PEPTISOL COKL 185G</p>
+        <img src="{{asset('assets/pharma/images/peptisol.jpeg')}}" data-toggle="modal" data-target="#modaltiga" alt="Image" class="img-fluid">
+       <p> Kemasan : 1 Pcs</p>
+        <p>Dosis : dewasa: 6x sehari.63 gr tiap kali penyajian, dilarutkan dalam 200 ml air hangat untuk menghasilkan 250 kkal  </p>
+           <p>
+            Penyajian : Larutkan 5 sendok takar (± 63 g) ke dalam 200 mL air matang hangat dengan suhu di bawah 70 derajat Celsius, aduk hingga larut.
+            3 gummy per hari</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="modalempat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalempatjudul">HEPA-Q</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p>  HEPA-Q </p>
+        <center><img src="{{asset('assets/pharma/images/hepaq.jpg')}}" data-toggle="modal" data-target="#modalempat" alt="Image" class="img-fluid">
+       </center><p>
+     Komposisi : Silybum marianum extract 87.5 mg. Curcuma xanthorrizae extract 21 mg Oleum xanthorrizae 10 mg Fructus schisandrae extract 7.5 mg</p>
+        <p>
+        Indikasi : Membantu membersihkan dan memperbaiki fungsi hati</p>
+        <p>
+        Dosis : 1 kapsul 3-4 kali sehari. Pemeliharaan & kasus ringan 1 kapsul 2-3 kali sehari.
+        </p>
+        <p>
+            Cara Penyimpanan : Perlu wadah ketat di tempat yang sejuk (15 - 25 derajat Celsius) dan tempat kering, jauh dari cahaya
+        </p>
+        <p>
+        Kemasan : 1 Dos isi 1 Strip x 6 Tablet
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -193,12 +278,13 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="{{asset('assets/pharma/images/pethidin.jpg')}}" data-toggle="modal" data-target="#modaldua" alt="Image" class="img-fluid">
-        <p>PETHIDIN Hcl</p>
-        <p>Tiap ml injeksi mengandung :</p>
-        <p>Pethidin HCl 50 mg</p>
-        <p>Dus, 10 ampul @ 2 ml</p>
-        <p>Analgesik Narkotika</p>
+        <p> FITKOM GUMMY GO COKLAT 5S</p>
+        <img src="{{asset('assets/pharma/images/fitkom.jpg')}}" data-toggle="modal" data-target="#modaltiga" alt="Image" class="img-fluid">
+       <p> Kemasan </p>
+        <p>1 Dos isi 1 Pcs  </p>
+           <p>
+            Dosis
+            3 gummy per hari</p>
     </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -206,26 +292,32 @@
     </div>
   </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="modallima" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modallimajudul">Peptisol</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p>  PEPTISOL COKL 185G</p>
+        <img src="{{asset('assets/pharma/images/peptisol.jpeg')}}" data-toggle="modal" data-target="#modallima" alt="Image" class="img-fluid">
+       <p> Kemasan : 1 Pcs</p>
+        <p>Dosis : dewasa: 6x sehari.63 gr tiap kali penyajian, dilarutkan dalam 200 ml air hangat untuk menghasilkan 250 kkal  </p>
+           <p>
+            Penyajian : Larutkan 5 sendok takar (± 63 g) ke dalam 200 mL air matang hangat dengan suhu di bawah 70 derajat Celsius, aduk hingga larut.
+            3 gummy per hari</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+    </div>
+  </div>
+</div>
                     </td>
-                    <td class="product-name">
-                      <h2 class="h5 text-black">Bioderma</h2>
-                    </td>
-                    <td>$49.00</td>
-                    <td>
-                      <div class="input-group mb-3" style="max-width: 120px;">
-                        <div class="input-group-prepend">
-                          <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
-                        </div>
-                        <input type="text" class="form-control text-center" value="1" placeholder=""
-                          aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
-                        </div>
-                      </div>
-
-                    </td>
-                    <td>$49.00</td>
-                    <td><a href="#" class="btn btn-primary height-auto btn-sm">X</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -233,89 +325,7 @@
           </form>
         </div>
 
-        <div class="row">
-          <div class="col-md-6">
-            <div class="row mb-5">
-              <div class="col-md-6 mb-3 mb-md-0">
-                <button class="btn btn-primary btn-md btn-block">Update Cart</button>
-              </div>
-              <div class="col-md-6">
-                <button class="btn btn-outline-primary btn-md btn-block">Continue Shopping</button>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <label class="text-black h4" for="coupon">Coupon</label>
-                <p>Enter your coupon code if you have one.</p>
-              </div>
-              <div class="col-md-8 mb-3 mb-md-0">
-                <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
-              </div>
-              <div class="col-md-4">
-                <button class="btn btn-primary btn-md px-4">Apply Coupon</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 pl-5">
-            <div class="row justify-content-end">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-12 text-right border-bottom mb-5">
-                    <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <span class="text-black">Subtotal</span>
-                  </div>
-                  <div class="col-md-6 text-right">
-                    <strong class="text-black">$230.00</strong>
-                  </div>
-                </div>
-                <div class="row mb-5">
-                  <div class="col-md-6">
-                    <span class="text-black">Total</span>
-                  </div>
-                  <div class="col-md-6 text-right">
-                    <strong class="text-black">$230.00</strong>
-                  </div>
-                </div>
 
-                <div class="row">
-                  <div class="col-md-12">
-                    <button class="btn btn-primary btn-lg btn-block" onclick="window.location='checkout'">Proceed To
-                      Checkout</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section bg-secondary bg-image" style="background-image: url({{asset('assets/pharma/images/bg_2.jpg')}});">
-      <div class="container">
-        <div class="row align-items-stretch">
-          <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url({{asset('assets/pharma/images/bg_1.jpg')}});">
-              <div class="banner-1-inner align-self-center">
-                <h2>Pharma Products</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url({{asset('assets/pharma/images/bg_2.jpg')}});">
-              <div class="banner-1-inner ml-auto  align-self-center">
-                <h2>Rated by Experts</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
 

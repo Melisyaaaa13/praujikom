@@ -55,18 +55,10 @@
                   <ul class="dropdown">
                     <li><a href="suplement">Supplements</a></li>
                     <li class="has-children">
-                      <a href="#">Vitamins</a>
-                      <ul class="dropdown">
-                        <li><a href="suplement">Supplements</a></li>
-                        <li><a href="#">Vitamins</a></li>
-                        <li><a href="#">Diet &amp; Nutrition</a></li>
-                        <li><a href="#">Tea &amp; Coffee</a></li>
+                      <a href="vitamin">Vitamins</a>
                       </ul>
                     </li>
-                    <li><a href="#">Diet &amp; Nutrition</a></li>
-                    <li><a href="#">Tea &amp; Coffee</a></li>
 
-                  </ul>
                 </li>
                 <li><a href="about">About</a></li>
                 <li><a href="contact">Contact</a></li>
@@ -108,19 +100,17 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="banner-wrap bg-primary h-100">
               <a href="kapsul" class="h-100">
-                <img  src="{{asset('assets/pharma/images/generic.png')}}" alt="image" width="70">
               <br>
-                <align-items-center> <h5>Generic</h5>
-            </a>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="banner-wrap h-100">
-              <a href="#" class="h-100">
-                <h5>Season <br> Sale 50% Off</h5>
-                <p>
-                  Amet sit amet dolor
-                  <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+              <br>
+              <br>
+            <p>Apotek yang Melayani Obat Online Terlengkap</p>            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                        <div class="banner-wrap h-100">
+                        <a href="#" class="h-100">
+                            <p>
+            Apotek yang Melayani Beli Obat Online
                 </p>
               </a>
             </div>
@@ -128,11 +118,7 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="banner-wrap bg-warning h-100">
               <a href="#" class="h-100">
-                <h5>Buy <br> A Gift Card</h5>
-                <p>
-                  Amet sit amet dolor
-                  <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
-                </p>
+               <p>Beli Obat Online, Vitamin, Suplemen dan Alat Kesehatan Lebih Mudah.</p>
               </a>
             </div>
           </div>

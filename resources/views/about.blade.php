@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Pharma &mdash; Colorlib Template</title>
+  <title>Siap &mdash; Sistem Informasi Apoteker</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -42,7 +42,7 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="/" class="js-logo-clone">Pharma</a>
+              <a href="/" class="js-logo-clone">Siap        </a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
@@ -86,13 +86,12 @@
       </div>
     </div>
 
-    <div class="site-blocks-cover inner-page" style="background-image: url({{asset('assets/pharma/images/hero_1.jpg')}});">
+    <div class="site-blocks-cover inner-page" style="background-image: url({{asset('assets/pharma/images/apotekk.jpeg')}});">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mx-auto align-self-center">
             <div class=" text-center">
-              <h1>About Us</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum obcaecati natus iure voluptatum eveniet harum recusandae ducimus saepe.</p>ˀ
+              <h1>Tentang Apotek</h1>
             </div>
           </div>
         </div>
@@ -105,8 +104,8 @@
           <div class="col-md-6">
             <div class="block-16">
               <figure>
-                <img src="{{asset('assets/pharma/images/bg_1.jpg')}}" alt="Image placeholder" class="img-fluid rounded">
-                <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span
+                <img src="{{asset('assets/pharma/images/apotek.jpg')}}" alt="Image placeholder" class="img-fluid rounded">
+
                     class="icon-play"></span></a>
 
               </figure>
@@ -138,9 +137,7 @@
           <div class="col-md-6 order-md-2">
             <div class="block-16">
               <figure>
-                <img src="{{asset('assets/pharma/images/hero_1.jpg')}}" alt="Image placeholder" class="img-fluid rounded">
-                <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span
-                    class="icon-play"></span></a>
+                <img src="{{asset('assets/pharma/images/farmasi.jpg')}}" alt="Image placeholder" class="img-fluid rounded">
 
               </figure>
             </div>
@@ -170,9 +167,8 @@
               <span class="icon-truck text-primary"></span>
             </div>
             <div class="text">
-              <h2>Free Shipping</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan
-                tincidunt fringilla.</p>
+              <h2>Free ShFree ipping</h2>
+              <p>Apotek yang Melayani Obat Online Terlengkap</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
@@ -181,8 +177,7 @@
             </div>
             <div class="text">
               <h2>Free Returns</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan
-                tincidunt fringilla.</p>
+              <p>Apotik yang Melayani Beli Obat Online.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
@@ -191,8 +186,7 @@
             </div>
             <div class="text">
               <h2>Customer Support</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan
-                tincidunt fringilla.</p>
+              <p>Beli Obat Online, Vitamin, Suplemen dan Alat Kesehatan Lebih Mudah.</p>
             </div>
           </div>
         </div>
@@ -200,7 +194,7 @@
     </div>
 
 
-    <div class="site-section bg-light custom-border-bottom" data-aos="fade">
+    {{-- <div class="site-section bg-light custom-border-bottom" data-aos="fade">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 site-section-heading text-center pt-4">
@@ -271,7 +265,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 
 
     <footer class="site-footer">
