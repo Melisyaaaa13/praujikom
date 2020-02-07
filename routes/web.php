@@ -37,3 +37,7 @@ Route::get('menjagamata', 'frontend@menjagamata');
 Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function(){
     Route::resource('/index','backendController');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
