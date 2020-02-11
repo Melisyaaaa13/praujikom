@@ -25,4 +25,9 @@
             </ul>
         </li>
     </ul>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('category.index') }}">
+            <i class="nav-icon icon-drop"></i> Kategori
+        </a>
+    </li>
 </nav>

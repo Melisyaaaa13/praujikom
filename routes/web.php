@@ -36,6 +36,7 @@ Route::get('menjagamata', 'frontend@menjagamata');
 
 Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function(){
     Route::resource('/index','backendController');
+    Route::resource('/kategori','KategoriController');
 });
 
 

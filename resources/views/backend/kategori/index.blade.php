@@ -203,7 +203,114 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row" id="proBanner">
+                <div class="card-body">
+                        <div class="card">
 
+                                <h5 class="card-header">Data Tables kategori</h5><br>
+                                    <center>
+                                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                      Tambah Data
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Tambah Data kategori</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+
+                    <section class="page-content container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                            <center>
+                                                    <div class="card-header">Tambah kategori</div>
+                                                </center>
+
+                                                <div class="card-body">
+                                                    <form action="{{route('Kategori.store')}}" method="post" enctype="multipart/form-data">
+                                                        {{csrf_field()}}
+
+
+                                                        <div class="form-group">
+                                                            <label for="">nama_kategori</label><br>
+                                                            <input class="form-control
+                                                            @error('nama_kategori') is-invalid @enderror" type="text"
+                                                            name="nama_kategori" id="" required>
+                                                            @error('nama_kategori')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{$message}}</strong>
+                                                            </span>
+                                                            @enderror
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="">slug</label><br>
+                                                            <input class="form-control
+                                                            @error('slug') is-invalid @enderror" type="string"
+                                                            name="slug" id="" required>
+                                                            @error('slug')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{$message}}</strong>
+                                                            </span>
+                                                            @enderror
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button type="submit" class="btn btn-outline-info btn-rounded btn-block">
+                                                                Simpan Data
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
+                      <thead>
+                        <tr>
+                            <th>id kategori</th>
+                          <th>nama kategori</th>
+                          <th>slug</th>
+                          <th style="text-align: center;">Aksi</th>
+                        </tr>
+                        </thead>
+                           <tbody>
+                               @php $no=1; @endphp
+                                 @foreach ($kat  as $data)
+                                    <tr>
+                                        <td>{{$no++}}</td>
+                                       <td>{{$data->nama_kateogri}}</td>
+                                        <td>{{$data->slug}}</td>
+                                                style="width:250px; height:250px;" alt="Foto"></td>
+
+                                                    <td style="text-align: center;">
+                                            <form action="{{route('kat.destroy', $data->id)}}" method="post">
+                                               {{csrf_field()}}
+                                                            <a href="{{route('kat.edit', $data->id)}}"
+                                                class="zmdi zmdi-edit btn btn-warning btn-rounded btn-floating btn-outline" data-toggle="modal" data-target="#myModal"> Edit
+                                            </a>
+
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                    <button type="submit" class="zmdi zmdi-delete btn-rounded btn-floating btn btn-dangerbtn btn-danger btn-outline"> Delete</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                      </div>
             </div>
 
 
