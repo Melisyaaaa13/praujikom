@@ -38,6 +38,7 @@ Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function(){
     Route::resource('/index','backendController');
     Route::resource('/kategori','kategoriController');
         Route::resource('/tag','TagController');
+        Route::resource('/artikel','artikelController');
 
 });
 

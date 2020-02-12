@@ -230,8 +230,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12 block-3 products-wrap">
-            <div class="nonloop-block-3 owl-carousel">
+          <div class="col-md-12 block-3 products-wrap" id="isinya">
+            {{-- <div class="nonloop-block-3 owl-carousel">
 
               <div class="text-center item mb-4">
                 <a href="shop-single"> <img src="{{asset('assets/pharma/images/haricuci.jpeg')}}" alt="Image" width="300"></a>
@@ -253,7 +253,7 @@
                 <h3 class="text-dark"><a href="shop-single">Jangan Panik ketika anak sakit</a></h3>
               </div>
 
-            </div>
+            </div> --}}
           </div>
         </div>
       </div>
@@ -322,7 +322,7 @@
   <script src="{{asset('assets/pharma/js/owl.carousel.min.js')}}"></script>
   <script src="{{asset('assets/pharma/js/jquery.magnific-popup.min.js')}}"></script>
   <script src="{{asset('assets/pharma/js/aos.js')}}"></script>
-
+ <script src="{{asset('js/tag.js')}}"></script>
   <script src="{{asset('assets/pharma/js/main.js')}}"></script>
 
 </body>

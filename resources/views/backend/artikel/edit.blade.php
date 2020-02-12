@@ -1,63 +1,104 @@
-{{--
-@section('content')
-<section class="page-content container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <h5 class="card-header">Data Tables Artikel</h5><br>
-                <center>
-                        <a href="{{ route('artikel.create') }}"
-                            class="la la-cloud-upload btn btn-info btn-rounded btn-floating btn-outline">&nbsp;Tambah Data
-                        </a>
-                </center>
-                <div class="card-body">
-                    <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th>Judul</th>
-                                <th>Slug</th>
-                                <th>Kategori</th>
-                                <th>Tag</th>
-                                <th>Penulis</th>
-                                <th>Foto</th>
-                                <th style="text-align: center;">Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($artikel as $data)
-                            <tr>
-                                <td>{{$data->judul}}</td>
-                                <td>{{$data->slug}}</td>
-                                <td>{{$data->kategori->nama_kategori}}</td>
-                                <td>@foreach ($data->tag as $tag)
-                                    {{ $tag->nama_tag }}
-                                @endforeach</td>
-                                <td>{{$data->user->name}}</td>
-                                <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
-                                    style="width:250px; height:250px;" alt="Foto"></td>
+{{-- <section class="page-content container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                        <center>
+                                <div class="card-header">Tambah Artikel</div>
+                            </center>
 
-								<td style="text-align: center;">
-                                    <form action="{{route('artikel.destroy', $data->id)}}" method="post">
-                                        {{csrf_field()}}
-									<a href="{{route('artikel.edit', $data->id)}}"
-										class="zmdi zmdi-edit btn btn-warning btn-rounded btn-floating btn-outline"> Edit
-                                    </a>
-                                    <input type="hidden" name="_method" value="DELETE">
-										<button type="submit" class="zmdi zmdi-delete btn-rounded btn-floating btn btn-dangerbtn btn-danger btn-outline"> Delete</button>
-									</form>
-								</td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-
-
+                            <div class="card-body">
+                                <form action="{{route('artikel.store')}}" method="post" enctype="multipart/form-data">
+                                    {{csrf_field()}}
+          <div class="form-group">
+                                        <label for="">Judul</label>
+                                        <input class="form-control
+                                        @error('judul') is-invalid @enderror" type="text"
+                                        name="judul" id="" value="{{$artikel->judul}}" required>
+                                        @error('judul')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Foto</label>
+                                        @if (isset($artikel) && $artikel->foto)
+                                            <p>
+                                                <img src="{{ asset('assets/img/artikel/'
+                                                .$artikel->foto.'') }}"
+                                                style="margin-top:15px;margin-bottom:15px;
+                                                max-height:100px;border:1px;border-color:black;" alt="">
+                                            </p>
+                                        @endif
+                                        <input class="form-control
+                                        @error('foto') is-invalid @enderror" type="file"
+                                        name="foto" id="" value="{{$artikel->foto}}">
+                                        @error('foto')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Tag</label>
+                                        <select class="form-control
+                                        @error('tag') is-invalid @enderror"
+                                        name="tag[]" id="s2_demo3" multiple="multiple" required>
+                                            @foreach ($tag as $data)
+                                                <option value="{{ $data->id }}"
+                                                    {{ (in_array($data->id, $select)) ?
+                                                        'selected="selected"' : ''}}>
+                                                    {{ $data->nama_tag }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                        @error('tag')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Kategori</label>
+                                        <select class="form-control
+                                        @error('kategori') is-invalid @enderror"
+                                        name="id_kategori" id="" required>
+                                            @foreach ($kategori as $data)
+                                                <option value="{{$data->id}}"
+                                                    @if ($data->id == $artikel->id_kategori) selected="selected" @endif>
+                                                    {{ $data->nama_kategori }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                        @error('kategori')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="">Konten</label>
+                                            <textarea class="form-control
+                                            @error('konten') is-invalid @enderror"
+                                            name="konten" id="editor1" required> {{$artikel->konten}}
+                                            </textarea>
+                                            @error('konten')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$message}}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-outline-info btn-rounded btn-block">
+                                            Simpan Data
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-@endsection --}}
+            </section> --}}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -266,59 +307,101 @@
             <div class="row" id="proBanner">
                 <div class="card-body">
                         <div class="card">
- <h5 class="card-header">Data Tables Artikel</h5><br>
-                <center>
-                        <a href="{{ route('artikel.create') }}"
-                            class="la la-cloud-upload btn btn-info btn-rounded btn-floating btn-outline">&nbsp;Tambah Data
-                        </a>
-                </center>
-                <div class="card-body">
-                    <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th>Judul</th>
-                                <th>Slug</th>
-                                <th>Kategori</th>
-                                <th>Tag</th>
-                                <th>Penulis</th>
-                                <th>Foto</th>
-                                <th style="text-align: center;">Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($artikel as $data)
-                            <tr>
-                                <td>{{$data->judul}}</td>
-                                <td>{{$data->slug}}</td>
-                                <td>{{$data->kategori->nama_kategori}}</td>
-                                <td>@foreach ($data->tag as $tag)
-                                    {{ $tag->nama_tag }}
-                                @endforeach</td>
-                                <td>{{$data->user->name}}</td>
-                                <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
-                                    style="width:250px; height:250px;" alt="Foto"></td>
+  <div class="card-header">Tambah Artikel</div>
+                            </center>
 
-								<td style="text-align: center;">
-                                    <form action="{{route('artikel.destroy', $data->id)}}" method="post">
-                                        {{csrf_field()}}
-									<a href="{{route('artikel.edit', $data->id)}}"
-										class="zmdi zmdi-edit btn btn-warning btn-rounded btn-floating btn-outline"> Edit
-                                    </a>
-                                    <input type="hidden" name="_method" value="DELETE">
-										<button type="submit" class="zmdi zmdi-delete btn-rounded btn-floating btn btn-dangerbtn btn-danger btn-outline"> Delete</button>
-									</form>
-								</td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-
-
+                            <div class="card-body">
+                                <form action="{{route('artikel.store')}}" method="post" enctype="multipart/form-data">
+                                    {{csrf_field()}}
+          <div class="form-group">
+                                        <label for="">Judul</label>
+                                        <input class="form-control
+                                        @error('judul') is-invalid @enderror" type="text"
+                                        name="judul" id="" value="{{$artikel->judul}}" required>
+                                        @error('judul')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Foto</label>
+                                        @if (isset($artikel) && $artikel->foto)
+                                            <p>
+                                                <img src="{{ asset('assets/img/artikel/'
+                                                .$artikel->foto.'') }}"
+                                                style="margin-top:15px;margin-bottom:15px;
+                                                max-height:100px;border:1px;border-color:black;" alt="">
+                                            </p>
+                                        @endif
+                                        <input class="form-control
+                                        @error('foto') is-invalid @enderror" type="file"
+                                        name="foto" id="" value="{{$artikel->foto}}">
+                                        @error('foto')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Tag</label>
+                                        <select class="form-control
+                                        @error('tag') is-invalid @enderror"
+                                        name="tag[]" id="s2_demo3" multiple="multiple" required>
+                                            @foreach ($tag as $data)
+                                                <option value="{{ $data->id }}"
+                                                    {{ (in_array($data->id, $select)) ?
+                                                        'selected="selected"' : ''}}>
+                                                    {{ $data->nama_tag }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                        @error('tag')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Kategori</label>
+                                        <select class="form-control
+                                        @error('kategori') is-invalid @enderror"
+                                        name="id_kategori" id="" required>
+                                            @foreach ($kategori as $data)
+                                                <option value="{{$data->id}}"
+                                                    @if ($data->id == $artikel->id_kategori) selected="selected" @endif>
+                                                    {{ $data->nama_kategori }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                        @error('kategori')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="">Konten</label>
+                                            <textarea class="form-control
+                                            @error('konten') is-invalid @enderror"
+                                            name="konten" id="editor1" required> {{$artikel->konten}}
+                                            </textarea>
+                                            @error('konten')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$message}}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-outline-info btn-rounded btn-block">
+                                            Simpan Data
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
                           </div>
 
                         </div>
@@ -335,7 +418,7 @@
                         </thead>
                            <tbody>
                                @php $no=1; @endphp
-                                 @foreach ($kat ?? ''  as $data)
+                                 @foreach ($kat  as $data)
                                     <tr>
                                         <td>{{$no++}}</td>
                                        <td>{{$data->nama_kategori}}</td>
@@ -356,25 +439,17 @@
                         </table>
                       </div>
             </div>
-
-
           </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
               <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2017 <a href="https://www.bootstrapdash.com/" target="_blank">BootstrapDash</a>. All rights reserved.</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
             </div>
           </footer>
-          <!-- partial -->
         </div>
-        <!-- main-panel ends -->
       </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
+        </div>
+
     <script src="{{asset('assets/purple/assets/vendors/js/vendor.bundle.base.js')}}"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
