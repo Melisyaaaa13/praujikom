@@ -10,4 +10,9 @@ class Kategory extends Model
       'nama_kategori','slug',
     ];
      public $timestamps = true;
+
+     public function getRouteKeyName()
+     {
+        return 'slug';
+     }
 }

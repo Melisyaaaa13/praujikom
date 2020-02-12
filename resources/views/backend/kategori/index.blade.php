@@ -58,6 +58,7 @@
                 </i> </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     {{ csrf_field() }}
+
                     </form>
               </div>
             </li>
@@ -179,7 +180,7 @@
               <a href="#" class="nav-link"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="/kategori">
                 <span class="menu-title">Kategori</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
@@ -234,7 +235,7 @@
                                                 </center>
 
                                                 <div class="card-body">
-                                                    <form action="{{route('Kategori.store')}}" method="post" enctype="multipart/form-data">
+                                                    <form action="{{ route('kategori.store')}}" method="post" enctype="multipart/form-data">
                                                         {{csrf_field()}}
 
 
@@ -291,19 +292,16 @@
                                  @foreach ($kat  as $data)
                                     <tr>
                                         <td>{{$no++}}</td>
-                                       <td>{{$data->nama_kateogri}}</td>
+                                       <td>{{$data->nama_kategori}}</td>
                                         <td>{{$data->slug}}</td>
-                                                style="width:250px; height:250px;" alt="Foto"></td>
-
-                                                    <td style="text-align: center;">
-                                            <form action="{{route('kat.destroy', $data->id)}}" method="post">
-                                               {{csrf_field()}}
-                                                            <a href="{{route('kat.edit', $data->id)}}"
-                                                class="zmdi zmdi-edit btn btn-warning btn-rounded btn-floating btn-outline" data-toggle="modal" data-target="#myModal"> Edit
+                                            <td style="text-align: center;">
+                                            <form action="{{route('kategori.destroy', $data->id)}}" method="post">
+                                            {{csrf_field()}}
+                                            <a href="{{route('kategori.edit', $data->id)}}"
+                                            class="zmdi zmdi-edit btn btn-warning btn-rounded btn-floating btn-outline" data-toggle="modal" data-target="#myModal"> Edit
                                             </a>
-
-                                                <input type="hidden" name="_method" value="DELETE">
-                                                    <button type="submit" class="zmdi zmdi-delete btn-rounded btn-floating btn btn-dangerbtn btn-danger btn-outline"> Delete</button>
+                                            <input type="hidden" name="_method" value="DELETE">
+                                            <button type="submit" class="zmdi zmdi-delete btn-rounded btn-floating btn btn-dangerbtn btn-danger btn-outline"> Delete</button>
                                             </form>
                                         </td>
                                     </tr>

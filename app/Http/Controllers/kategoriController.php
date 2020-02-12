@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Kategory;
+use Illuminate\Support\Str;
 
-class KategoriController extends Controller
+use App\Kategory;
+use Session;
+
+class kategoriController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -37,13 +40,16 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-        {$kat = new Kategory();
-            $kat->nama_kategori = $request->nama_kategori;
-            $kat->slug = $request->slug;
-
-            $kat->save();
-            return redirect()->route('Kategori.index');
-        }
+        $kat = new Kategory();
+        $kat->nama_kategori = $request->nama_kategori;
+        $kat->slug = Str::slug($request->nama_kategori, '-');
+        $kat->save();
+        Session::flash("flash_notification",[
+            "level" => "success",
+            "message" => "Berhasil menyimpan<b>"
+                         . $kat->nama_kategori."</b>"
+        ]);
+        return redirect()->route('kategori.index');
     }
 
     /**
@@ -65,7 +71,8 @@ class KategoriController extends Controller
      */
     public function edit($id)
     {
-        //
+        $kat = Kategory::findOrfail($id);
+        return view('kategori.edit',compact('kategori'));
     }
 
     /**
@@ -88,6 +95,7 @@ class KategoriController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Kategory::destroy($id);
+        return redirect()->route('kategori.index');
     }
 }
