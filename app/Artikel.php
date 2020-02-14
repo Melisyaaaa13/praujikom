@@ -4,17 +4,18 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Session;
+
 class Artikel extends Model
 {
      protected $fillable = [
         'judul','slug','foto',
-        'konten','id_user','id_kategori'
+        'konten','id_user','id_kategori','harga'
     ];
     public $timestamps = true;
 
-    public function kategori()
+    public function kategory()
     {
-        return $this->belongsTo('App\Kategori','id_kategori');
+        return $this->belongsTo('App\Kategory','id_kategori');
     }
 
     public function user()

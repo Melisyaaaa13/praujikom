@@ -63,7 +63,7 @@
                                         <select class="form-control
                                         @error('kategori') is-invalid @enderror"
                                         name="id_kategori" id="" required>
-                                            @foreach ($kategori as $data)
+                                            @foreach ($kat as $data)
                                                 <option value="{{$data->id}}"
                                                     @if ($data->id == $artikel->id_kategori) selected="selected" @endif>
                                                     {{ $data->nama_kategori }}
@@ -313,7 +313,7 @@
                             <div class="card-body">
                                 <form action="{{route('artikel.store')}}" method="post" enctype="multipart/form-data">
                                     {{csrf_field()}}
-          <div class="form-group">
+                                    <div class="form-group">
                                         <label for="">Judul</label>
                                         <input class="form-control
                                         @error('judul') is-invalid @enderror" type="text"
@@ -367,7 +367,7 @@
                                         <select class="form-control
                                         @error('kategori') is-invalid @enderror"
                                         name="id_kategori" id="" required>
-                                            @foreach ($kategori as $data)
+                                            @foreach ($kat as $data)
                                                 <option value="{{$data->id}}"
                                                     @if ($data->id == $artikel->id_kategori) selected="selected" @endif>
                                                     {{ $data->nama_kategori }}
@@ -375,6 +375,17 @@
                                             @endforeach
                                         </select>
                                         @error('kategori')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                        @enderror
+                                    </div>
+                                     <div class="form-group">
+                                        <label for="">harga</label>
+                                        <input class="form-control
+                                        @error('harga') is-invalid @enderror" type="text"
+                                        name="harga" id="" value="{{$artikel->harga}}" required>
+                                        @error('harga')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{$message}}</strong>
                                         </span>
@@ -407,36 +418,7 @@
                         </div>
                       </div>
                     </div>
-                    <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
-                      <thead>
-                        <tr>
-                            <th>id kategori</th>
-                          <th>nama kategori</th>
-                          <th>slug</th>
-                          <th style="text-align: center;">Aksi</th>
-                        </tr>
-                        </thead>
-                           <tbody>
-                               @php $no=1; @endphp
-                                 @foreach ($kat  as $data)
-                                    <tr>
-                                        <td>{{$no++}}</td>
-                                       <td>{{$data->nama_kategori}}</td>
-                                        <td>{{$data->slug}}</td>
-                                            <td style="text-align: center;">
-                                            <form action="{{route('kategori.destroy', $data->id)}}" method="post">
-                                            {{csrf_field()}}
-                                            <a href="{{route('kategori.edit', $data->id)}}"
-                                            class="zmdi zmdi-edit btn btn-warning btn-rounded btn-floating btn-outline" data-toggle="modal" data-target="#myModal"> Edit
-                                            </a>
-                                            <input type="hidden" name="_method" value="DELETE">
-                                            <button type="submit" class="zmdi zmdi-delete btn-rounded btn-floating btn btn-dangerbtn btn-danger btn-outline"> Delete</button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+
                       </div>
             </div>
           </div>

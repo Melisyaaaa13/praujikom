@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-use App\Kategori;
+use App\Kategory;
 use App\Tag;
 use App\Artikel;
 use Session;
@@ -20,7 +20,7 @@ class artikelController extends Controller
      */
     public function index()
     {
-        $artikel = Artikel::orderBy('created_at','desc')->get();
+        $artikel = Artikel::with('kategory', 'tag')->orderBy('created_at','desc')->get();
         return view('backend.artikel.index', compact('artikel'));
     }
 
@@ -31,7 +31,7 @@ class artikelController extends Controller
      */
     public function create()
     {
-        $kat = Kategori::all();
+        $kat = Kategory::all();
         $tag = Tag::all();
         // dd($tag);
         return view('backend.artikel.create', compact('kat','tag'));
@@ -62,13 +62,14 @@ class artikelController extends Controller
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $path = public_path() .'/assets/img/artikel';
-            $filename = str_random(6) . '_'
+            $filename = Str::random(6) . '_'
             . $file->getClientOriginalName();
             $upload = $file->move(
                 $path,$filename
             );
             $artikel->foto = $filename;
         }
+        $artikel->harga = $request->harga;
         $artikel->save();
         $artikel->tag()->attach($request->tag);
         Session::flash("flash_notification",[
@@ -76,6 +77,7 @@ class artikelController extends Controller
             "message" => "Berhasil menyimpan <b>"
                          . $artikel->judul."</b>"
         ]);
+        return redirect()->route('artikel.index');
     }
 
     /**
@@ -99,7 +101,7 @@ class artikelController extends Controller
     public function edit($id)
     {
         $artikel = Artikel::findOrfail($id);
-        $kat = Kategori::all();
+        $kat = Kategory::all();
         $tag = Tag::all();
         $select = $artikel->tag->pluck('id')->toArray();
         return view('backend.artikel.edit', compact('artikel','kat','select','tag'));
@@ -149,8 +151,10 @@ class artikelController extends Controller
             }
             $artikel->foto = $filename;
         }
-        $artikel->save();
         $artikel->tag()->sync($request->tag);
+        $artikel->harga = $request->harga;
+
+        $artikel->save();
         Session::flash("flash_notification",[
             "level" => "success",
             "message" => "Berhasil edit <b>"

@@ -135,42 +135,17 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <span class="tag">Sale</span>
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/Cleanclear.jpeg')}}" alt="Image" width="300"></a>
-            <h3 class="text-dark"><a href="shop-single">Clear n Clear</a></h3>
-            <p class="price"> Rp.7.900 &mdash; Rp.27.000</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/dettol.jpeg')}}" alt="Image" width="320"></a>
-            <h3 class="text-dark"><a href="shop-single">Dettol</a></h3>
-            <p class="price">Rp38,200</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/betadin.jpeg')}}" alt="Image" width="320"></a>
-            <h3 class="text-dark"><a href="shop-single">Betadine</a></h3>
-            <p class="price">Rp11,800</p>
-          </div>
+            <div class="row">
+                @foreach ($artikel as $data)
+                <div class="col-sm-6 col-lg-4 text-center item mb-4">
+                     <a href="shop-single"> <img src="{{asset('assets/img/artikel/'.$data->foto)}}" alt="Image" width="300"></a>
+                    <h3 class="text-dark"><a href="shop-single">{{$data->judul}}</a></h3>
+                    <p class="price"> Rp {{$data->harga}}</p>
+                </div>
+                 @endforeach
+            </div>
 
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
 
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/instoo.jpeg')}}" alt="Image" width="300"></a>
-            <h3 class="text-dark"><a href="shop-single">Insto</a></h3>
-            <p class="price">Rp13,714</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/obh100.jpg')}}" alt="Image" width="300"></a>
-            <h3 class="text-dark"><a href="shop-single">Obh ika generik </a></h3>
-            <p class="price">Rp 14.762,- / Botol</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <span class="tag">Sale</span>
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div>
-        </div>
         <div class="row mt-5">
           <div class="col-12 text-center">
             <a href="shop" class="btn btn-primary px-4 py-3">View All Products</a>

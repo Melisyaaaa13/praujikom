@@ -240,19 +240,19 @@
               <a href="#" class="nav-link"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="kategori">
                 <span class="menu-title">Kategori</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="tag">
                   <span class="menu-title">Tag</span>
                   <i class="mdi mdi-home menu-icon"></i>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="artikel">
                   <span class="menu-title">Artikel</span>
                   <i class="mdi mdi-home menu-icon"></i>
                 </a>
@@ -281,7 +281,8 @@
                                 <th>Kategori</th>
                                 <th>Tag</th>
                                 <th>Penulis</th>
-                                <th>Foto</th>
+                                <th>foto</th>
+                                <th>Harga</th>
                                 <th style="text-align: center;">Aksi</th>
                             </tr>
                         </thead>
@@ -290,15 +291,15 @@
                             <tr>
                                 <td>{{$data->judul}}</td>
                                 <td>{{$data->slug}}</td>
-                                <td>{{$data->kategori->nama_kategori}}</td>
+                                <td>{{$data->kategory->nama_kategori}}</td>
                                 <td>@foreach ($data->tag as $tag)
                                     {{ $tag->nama_tag }}
                                 @endforeach</td>
                                 <td>{{$data->user->name}}</td>
                                 <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
-                                    style="width:250px; height:250px;" alt="Foto"></td>
-
-								<td style="text-align: center;">
+                                    style="width:250px; height:250px;" alt="Foto"></td></td>
+                                <td>{{$data->harga}}</td>
+                                <td>
                                     <form action="{{route('artikel.destroy', $data->id)}}" method="post">
                                         {{csrf_field()}}
 									<a href="{{route('artikel.edit', $data->id)}}"
@@ -324,36 +325,7 @@
                         </div>
                       </div>
                     </div>
-                    <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
-                      <thead>
-                        <tr>
-                            <th>id kategori</th>
-                          <th>nama kategori</th>
-                          <th>slug</th>
-                          <th style="text-align: center;">Aksi</th>
-                        </tr>
-                        </thead>
-                           <tbody>
-                               @php $no=1; @endphp
-                                 @foreach ($kat ?? ''  as $data)
-                                    <tr>
-                                        <td>{{$no++}}</td>
-                                       <td>{{$data->nama_kategori}}</td>
-                                        <td>{{$data->slug}}</td>
-                                            <td style="text-align: center;">
-                                            <form action="{{route('kategori.destroy', $data->id)}}" method="post">
-                                            {{csrf_field()}}
-                                            <a href="{{route('kategori.edit', $data->id)}}"
-                                            class="zmdi zmdi-edit btn btn-warning btn-rounded btn-floating btn-outline" data-toggle="modal" data-target="#myModal"> Edit
-                                            </a>
-                                            <input type="hidden" name="_method" value="DELETE">
-                                            <button type="submit" class="zmdi zmdi-delete btn-rounded btn-floating btn btn-dangerbtn btn-danger btn-outline"> Delete</button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+
                       </div>
             </div>
 

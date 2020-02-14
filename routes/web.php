@@ -23,7 +23,7 @@ Route::get('/login', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('/', 'frontend');
+// Route::resource('/', 'frontend');
 Route::get('about', 'frontend@about');
 Route::get('cart', 'frontend@cart');
 Route::get('checkout', 'frontend@checkout');
@@ -32,6 +32,7 @@ Route::get('contact', 'frontend@contact');
 Route::get('suplement', 'frontend@suplement');
 Route::get('kapsul', 'frontend@kapsul');
 Route::get('menjagamata', 'frontend@menjagamata');
+Route::get('/', 'FrontendController@index');
 
 
 Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function(){
