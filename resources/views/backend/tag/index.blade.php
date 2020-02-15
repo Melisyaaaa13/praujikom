@@ -180,19 +180,19 @@
               <a href="#" class="nav-link"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="kategori">
                 <span class="menu-title">Kategori</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="tag">
                   <span class="menu-title">Tag</span>
                   <i class="mdi mdi-home menu-icon"></i>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="artikel">
                   <span class="menu-title">Artikel</span>
                   <i class="mdi mdi-home menu-icon"></i>
                 </a>

@@ -11,4 +11,8 @@ class FrontendController extends Controller
            $artikel = Artikel::get();
            return view ('index', compact('artikel'));
        }
+        public function shop(){
+           $artikel = Artikel::get();
+           return view ('shop', compact('artikel'));
+       }
 }

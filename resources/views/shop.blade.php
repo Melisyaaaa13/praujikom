@@ -107,159 +107,19 @@
         </div>
 
         <div class="row">
+            @foreach ($artikel as $data)
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/Cleanclear.jpeg')}}" alt="Image" width="300"></a>
-            <h3 class="text-dark"><a href="shop-single">Clear n Clear</a></h3>
-            <p class="price"> Rp.7.900 &mdash; Rp.27.000</p>
+            <a href="shop-single"> <img src="{{asset('assets/img/artikel/'.$data->foto)}}" alt="Image" width="300"></a>
+            <h3 class="text-dark"><a href="shop-single">{{$data->judul}}</a></h3>
+            <p class="price"> Rp {{$data->harga}} </p>
           </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/dettol.jpeg')}}" alt="Image" width="320"></a>
-            <h3 class="text-dark"><a href="shop-single">Dettol</a></h3>
-            <p class="price">Rp38,200</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/betadin.jpeg')}}" alt="Image" width="320"></a>
-            <h3 class="text-dark"><a href="shop-single">Betadine</a></h3>
-            <p class="price">Rp11,800</p>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/instoo.jpeg')}}" alt="Image" width="300"></a>
-            <h3 class="text-dark"><a href="shop-single">Insto</a></h3>
-            <p class="price">Rp13,714</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/obh100.jpg')}}" alt="Image" width="300"></a>
-            <h3 class="text-dark"><a href="shop-single">Obh ika generik </a></h3>
-            <p class="price">Rp 14.762,- / Botol</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/tolak.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">Tolak Angin</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/sangobion.jpg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">Sangobion</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/hansaplast.jpg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/vitaminc.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div><div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/lasrin.jpeg')}}" alt="Image" width="299"></a>
-            <h3 class="text-dark"><a href="shop-single">listerine fresh citrus</a></h3>
-            <p class="price">Rp 22.595,- / Botol </p>
-          </div>
+          @endforeach
         </div>
 
       </div>
     </div>
 
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_01.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">Bioderma</a></h3>
-            <p class="price"><del>95.00</del> &mdash; $55.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_02.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">Chanca Piedra</a></h3>
-            <p class="price">$70.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_03.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">Umcka Cold Care</a></h3>
-            <p class="price">$120.00</p>
-          </div>
 
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_04.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">Cetyl Pure</a></h3>
-            <p class="price"><del>45.00</del> &mdash; $20.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_05.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">CLA Core</a></h3>
-            <p class="price">$38.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_06.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">Poo Pourri</a></h3>
-            <p class="price"><del>$89</del> &mdash; $38.00</p>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_01.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">Bioderma</a></h3>
-            <p class="price"><del>95.00</del> &mdash; $55.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_02.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">Chanca Piedra</a></h3>
-            <p class="price">$70.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_03.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">Umcka Cold Care</a></h3>
-            <p class="price">$120.00</p>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_04.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">Cetyl Pure</a></h3>
-            <p class="price"><del>45.00</del> &mdash; $20.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_05.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">CLA Core</a></h3>
-            <p class="price">$38.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single"> <img src="{{asset('assets/pharma/images/product_06.png')}}" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single">Poo Pourri</a></h3>
-            <p class="price"><del>$89</del> &mdash; $38.00</p>
-          </div>
-        </div>
         <div class="row mt-5">
           <div class="col-md-12 text-center">
             <div class="site-block-27">

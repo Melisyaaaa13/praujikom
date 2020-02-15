@@ -266,12 +266,13 @@
             <div class="row" id="proBanner">
                 <div class="card-body">
                         <div class="card">
+                            <div>
  <h5 class="card-header">Data Tables Artikel</h5><br>
                 <center>
                         <a href="{{ route('artikel.create') }}"
                             class="la la-cloud-upload btn btn-info btn-rounded btn-floating btn-outline">&nbsp;Tambah Data
                         </a>
-                </center>
+                </center></div>
                 <div class="card-body">
                     <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
                         <thead>
@@ -280,7 +281,7 @@
                                 <th>Slug</th>
                                 <th>Kategori</th>
                                 <th>Tag</th>
-                                <th>Penulis</th>
+                                {{-- <th>konten</th> --}}
                                 <th>foto</th>
                                 <th>Harga</th>
                                 <th style="text-align: center;">Aksi</th>
@@ -295,10 +296,11 @@
                                 <td>@foreach ($data->tag as $tag)
                                     {{ $tag->nama_tag }}
                                 @endforeach</td>
-                                <td>{{$data->user->name}}</td>
+                                {{-- <td>{{$data->konten}}</td> --}}
                                 <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
                                     style="width:250px; height:250px;" alt="Foto"></td></td>
                                 <td>{{$data->harga}}</td>
+
                                 <td>
                                     <form action="{{route('artikel.destroy', $data->id)}}" method="post">
                                         {{csrf_field()}}

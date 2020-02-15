@@ -138,7 +138,7 @@
             <div class="row">
                 @foreach ($artikel as $data)
                 <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                     <a href="shop-single"> <img src="{{asset('assets/img/artikel/'.$data->foto)}}" alt="Image" width="300"></a>
+                     <a href="shop_single"> <img src="{{asset('assets/img/artikel/'.$data->foto)}}" alt="Image" width="300"></a>
                     <h3 class="text-dark"><a href="shop-single">{{$data->judul}}</a></h3>
                     <p class="price"> Rp {{$data->harga}}</p>
                 </div>
@@ -264,9 +264,9 @@
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled">
-                <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
-                <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
-                <li class="email">emailaddress@domain.com</li>
+                <li class="address">Bandung, Indonesia</li>
+                <li class="phone"><a href="tel://23923929210">+62812788955</a></li>
+                <li class="email">melisyaza418@gmail.com</li>
               </ul>
             </div>
 
