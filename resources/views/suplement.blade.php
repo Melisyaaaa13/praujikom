@@ -57,15 +57,6 @@
                     <li><a href="suplement">Supplements</a></li>
                     <li class="has-children">
                       <a href="#">Vitamins</a>
-                      <ul class="dropdown">
-                        <li><a href="suplement">Supplements</a></li>
-                        <li><a href="#">Vitamins</a></li>
-                        <li><a href="#">Diet &amp; Nutrition</a></li>
-                        <li><a href="#">Tea &amp; Coffee</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Diet &amp; Nutrition</a></li>
-                    <li><a href="#">Tea &amp; Coffee</a></li>
 
                   </ul>
                 </li>
@@ -114,6 +105,7 @@
                     <td class="product-thumbnail">
                       <img src="{{asset('assets/pharma/images/iflex.png')}}" data-toggle="modal" data-target="#exampleModalLong" alt="Image" class="img-fluid">
                         <p>I-Flex</p>
+                        <button type="button" class="btn btn-secondary">Beli</button>
                     </td>
                     <td class="product-thumbnail">
                       <img src="{{asset('assets/pharma/images/fitkom.jpg')}}" data-toggle="modal" data-target="#modaldua" alt="Image" class="img-fluid">

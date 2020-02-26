@@ -78,15 +78,15 @@
       </div>
     </div>
 
-    <div class="site-blocks-cover" style="background-image: url({{asset('assets/pharma/images/hero_1.jpg')}});">
+    <div class="site-blocks-cover" style="background-image: url({{asset('assets/pharma/images/wp.jpg')}});">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mx-auto order-lg-2 align-self-center">
             <div class="site-block-cover-content text-center">
-              <h2 class="sub-title">Effective Medicine, New Medicine Everyday</h2>
-              <h1>Welcome To Siap</h1>
+              {{-- <h2 class="sub-title">Effective Medicine, New Medicine Everyday</h2> --}}
+              <h1>Apotek Al-hikmah</h1>
               <p>
-                <a href="shop" class="btn btn-primary px-5 py-3">Belanja sekarang</a>
+                <a href="shop" class="btn btn-primary px-5 py-3">Beli obat sekarang</a>
               </p>
             </div>
           </div>
@@ -265,7 +265,7 @@
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled">
                 <li class="address">Bandung, Indonesia</li>
-                <li class="phone"><a href="tel://23923929210">+62812788955</a></li>
+                <li class="phone"><a >+6281278897755</a></li>
                 <li class="email">melisyaza418@gmail.com</li>
               </ul>
             </div>
