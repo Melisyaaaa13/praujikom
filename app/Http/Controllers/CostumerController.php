@@ -3,14 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
 
-use App\Kategory;
-use App\Suplemen;
-use Session;
-use Auth;
-use File;
-class suplemenController extends Controller
+class CostumerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,8 +13,7 @@ class suplemenController extends Controller
      */
     public function index()
     {
-        $suplemen = Suplemen::all();
-        return view('backend.suplemen.index', compact('suplemen'));
+        //
     }
 
     /**
@@ -30,9 +23,7 @@ class suplemenController extends Controller
      */
     public function create()
     {
-
-        $suplemen = Suplemen::all();
-        return view('backend.suplemen.create', compact('suplemen'));
+        //
     }
 
     /**
@@ -43,32 +34,7 @@ class suplemenController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'judul' => 'required|unique:suplemens',
-        //     'konten' => 'required|min:50',
-        //     'foto' => 'required|mimes:jpeg,jpg,png,gif|max:2048',
-        // ]);
-        $suplemen = new Suplemen();
-        $suplemen->judul = $request->judul;
-        // foto
-        if ($request->hasFile('foto')) {
-            $file = $request->file('foto');
-            $path = public_path() .'/assets/img/artikel';
-            $filename = Str::random(6) . '_'
-            . $file->getClientOriginalName();
-            $upload = $file->move(
-                $path,$filename
-            );
-            $suplemen->foto = $filename;
-        }
-        $suplemen->harga = $request->harga;
-        Session::flash("flash_notification",[
-            "level" => "success",
-            "message" => "Berhasil menyimpan <b>"
-                         . $suplemen->judul."</b>"
-        ]);
-        $suplemen->save();
-        return redirect()->route('suplemen.index');
+        //
     }
 
     /**

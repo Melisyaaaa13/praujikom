@@ -28,7 +28,7 @@ Route::get('about', 'frontend@about');
 Route::get('cart', 'frontend@cart');
 Route::get('checkout', 'frontend@checkout');
 Route::get('shop', 'FrontendController@shop');
-Route::get('shop_singel', 'frontend@shop_singel');
+Route::get('shop_single', 'frontend@shop_single');
 Route::get('contact', 'frontend@contact');
 Route::get('suplement', 'frontend@suplement');
 Route::get('kapsul', 'frontend@kapsul');

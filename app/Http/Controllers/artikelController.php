@@ -11,6 +11,7 @@ use App\Artikel;
 use Session;
 use Auth;
 use File;
+use Str;
 class artikelController extends Controller
 {
     /**

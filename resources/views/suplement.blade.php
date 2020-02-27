@@ -103,8 +103,11 @@
                 <tbody>
                   <tr>
                     <td class="product-thumbnail">
-                      <img src="{{asset('assets/pharma/images/iflex.png')}}" data-toggle="modal" data-target="#exampleModalLong" alt="Image" class="img-fluid">
-                        <p>I-Flex</p>
+                    @foreach ($suplement as $data)
+            <a href="shop-single"> <img src="{{asset('assets/img/artikel/'.$data->foto)}}" alt="Image"></a>
+            <h3 class="text-dark"><a href="shop-single">{{$data->judul}}</a></h3>
+            <p class="price"> Rp {{$data->harga}} </p>
+
                         <button type="button" class="btn btn-secondary">Beli</button>
                     </td>
                     <td class="product-thumbnail">
@@ -384,6 +387,7 @@
  </div>
     </footer>
   </div>
+
 
   <script src="{{asset('assets/pharma/js/jquery-3.3.1.min.js')}}"></script>
   <script src="{{asset('assets/pharma/js/jquery-ui.js')}}"></script>

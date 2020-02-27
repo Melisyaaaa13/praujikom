@@ -292,11 +292,7 @@
                             @foreach ($suplemen as $data)
                             <tr>
                                 <td>{{$data->judul}}</td>
-                                <td>{{$data->slug}}</td>
-                                <td>{{$data->kategory->nama_kategori}}</td>
-                                <td>@foreach ($data->tag as $tag)
-                                    {{ $tag->nama_tag }}
-                                @endforeach</td>
+                                </td>
                                 <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
                                     style="width:250px; height:250px;" alt="Foto"></td></td>
                                 <td>{{$data->harga}}</td>
@@ -321,14 +317,14 @@
         </div>
     </div>
 </section>
-                          </div>
+                          {{-- </div>
 
                         </div>
                       </div>
                     </div>
 
                       </div>
-            </div>
+            </div> --}}
 
 
           </div>
