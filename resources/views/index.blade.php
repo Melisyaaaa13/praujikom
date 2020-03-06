@@ -137,7 +137,8 @@
                 @foreach ($artikel as $data)
                 <div class="col-sm-6 col-lg-4 text-center item mb-4">
                      <a href="shop_single"> <img src="{{asset('assets/img/artikel/'.$data->foto)}}" alt="Image" width="300"></a>
-                    <h3 class="text-dark"><a href="shop-single">{{$data->judul}}</a></h3>
+                    <h3 class="text-dark"><a href="{{url('/shop_single/'.$data->slug)}}">
+                        {{$data->judul}}</a></h3>
                     <p class="price"> Rp {{$data->harga}}</p>
                 </div>
                  @endforeach

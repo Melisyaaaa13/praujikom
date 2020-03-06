@@ -19,4 +19,15 @@ class FrontendController extends Controller
            $suplemen = Suplemen::get();
            return view ('suplemen', compact('suplemen'));
        }
+
+       public function shop_single(){
+           $artikel = Artikel::get();
+           return view ('shop_single', compact('artikel'));
+       }
+
+       public function show(){
+           $artikel = Artikel::get();
+           return view ('show', compact('artikel'));
+       }
+
 }

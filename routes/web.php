@@ -30,6 +30,8 @@ Route::get('checkout', 'frontend@checkout');
 Route::get('shop', 'FrontendController@shop');
 Route::get('shop_single', 'frontend@shop_single');
 Route::get('contact', 'frontend@contact');
+Route::get('show', 'FrontendController@show');
+Route::get('shop_single/{slug}', 'FrontendController@show');
 Route::get('suplement', 'frontend@suplement');
 Route::get('kapsul', 'frontend@kapsul');
 Route::get('menjagamata', 'frontend@menjagamata');

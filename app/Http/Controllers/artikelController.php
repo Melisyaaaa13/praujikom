@@ -11,7 +11,6 @@ use App\Artikel;
 use Session;
 use Auth;
 use File;
-use Str;
 class artikelController extends Controller
 {
     /**
@@ -48,7 +47,7 @@ class artikelController extends Controller
     {
         $request->validate([
             'judul' => 'required|unique:artikels',
-            'konten' => 'required|min:50',
+            'konten' => 'required',
             'foto' => 'required|mimes:jpeg,jpg,png,gif|max:2048',
             'id_kategori' => 'required',
             'tag' => 'required'
@@ -119,7 +118,7 @@ class artikelController extends Controller
     {
         $request->validate([
             'judul' => 'required',
-            'konten' => 'required|min:50',
+            'konten' => 'required',
             'id_kategori' => 'required',
             'tag' => 'required'
         ]);

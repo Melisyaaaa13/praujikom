@@ -280,8 +280,8 @@
                                 <th>Judul</th>
                                 <th>Slug</th>
                                 <th>Kategori</th>
+                                <th>konten</th>
                                 <th>Tag</th>
-                                {{-- <th>konten</th> --}}
                                 <th>foto</th>
                                 <th>Harga</th>
                                 <th style="text-align: center;">Aksi</th>
@@ -293,10 +293,11 @@
                                 <td>{{$data->judul}}</td>
                                 <td>{{$data->slug}}</td>
                                 <td>{{$data->kategory->nama_kategori}}</td>
+                                <td>{{$data->konten}}</td>
                                 <td>@foreach ($data->tag as $tag)
                                     {{ $tag->nama_tag }}
                                 @endforeach</td>
-                                {{-- <td>{{$data->konten}}</td> --}}
+
                                 <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
                                     style="width:250px; height:250px;" alt="Foto"></td></td>
                                 <td>{{$data->harga}}</td>
